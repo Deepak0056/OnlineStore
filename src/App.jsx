@@ -7,6 +7,7 @@ import Nav from "./components/Nav";
 import Products from "./components/Products";
 import Search from "./pages/Search";
 import Footer from "./components/Footer";
+import ProductsFeed from "./pages/ProductsFeed";
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
           /> */}
           <Route path="/individualProduct/:productId" element={<IndividualProduct />} />
           <Route exact path="/products" element={<Products />} />
+          <Route exact path="/productsfeed" element={<ProductsFeed />} />
           <Route exact path="/search" element={<Search />} />
           <Route exact path="/addToCart" element={<AddToCart />} />
         </Routes>

@@ -10,7 +10,7 @@ const Nav = () => {
 
       <div className="hidden md:flex md:items-center md:gap-4 lg:gap-10 p-8 text-xl font-semibold">
         <a href="/" className="hover:border-b-4 border-white pb-1">Home</a>
-        <a href="/products" className="hover:border-b-4 border-white pb-1">Products</a>
+        <a href="/productsfeed" className="hover:border-b-4 border-white pb-1">Products</a>
         <a href="/search" className="hover:border-b-4 border-white pb-1">Search</a>
       </div>
 
