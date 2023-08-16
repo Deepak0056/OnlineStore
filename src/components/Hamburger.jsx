@@ -7,7 +7,7 @@ const Hamburger = () => {
     setShowMenu((prevShowmenu) => !prevShowmenu);
   };
   return (
-    <div className="cursor-pointer md:hidden text-blue-500" onClick={toggleMenu}>
+    <div className="cursor-pointer md:hidden text-blue-400" onClick={toggleMenu}>
       <div className="px-8 py-4">
         <div
           className={`w-6 h-1 mt-1 bg-white ${
@@ -27,8 +27,8 @@ const Hamburger = () => {
       <div
         className={
           !showMenu
-            ? " absolute right-[0.20px] -top-[100px] flex flex-col gap-2 p-2 w-full overflow-hidden font-semibold mt-[2.5rem] bg-white border-2 text-xl  transform transition-top duration-700 ease-in-out delay-100 -z-10 "
-            : "flex flex-col items-center gap-2 p-2 w-full overflow-hidden font-semibold mt-[2.5rem] bg-white border-2 text-xl absolute right-[0.20px] top-6 transform transition-top duration-700 ease-in delay-100 z-10 "
+            ? " absolute right-[0.20px] -top-[100px] flex flex-col items-center gap-2 p-2 w-full overflow-hidden font-semibold mt-[2.5rem] bg-white border-2 text-xl  transform transition-top duration-500 ease-in-out -z-10 "
+            : "flex flex-col items-center gap-2 p-2 w-full overflow-hidden font-semibold mt-[2.5rem] bg-white border-b-2 border-blue-300 shadow-lg text-xl absolute right-[0.20px] top-6 transform transition-top duration-700 ease-in z-10"
         }
       >
         <a href="/">Home</a>

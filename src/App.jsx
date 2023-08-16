@@ -5,6 +5,8 @@ import IndividualProduct from "./pages/IndividualProduct";
 import AddToCart from "./components/AddToCart";
 import Nav from "./components/Nav";
 import Products from "./components/Products";
+import Search from "./pages/Search";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
@@ -23,8 +25,14 @@ const App = () => {
             path="/products"
             element={<Products />}
           />
+          <Route
+            exact
+            path="/search"
+            element={<Search />}
+          />
           <Route exact path="/addToCart" element={<AddToCart />} />
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </>
   );
